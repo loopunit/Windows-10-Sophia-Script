@@ -132,7 +132,7 @@ CreateRestorePoint
 #region Privacy & Telemetry
 # Disable the DiagTrack service, and block connection for the Unified Telemetry Client Outbound Traffic
 # Отключить службу DiagTrack и заблокировать соединение для исходящего трафик клиента единой телеметрии
-DiagTrackService -Disable
+#DiagTrackService -Disable
 
 # Enable the DiagTrack service, and allow connection for the Unified Telemetry Client Outbound Traffic
 # Включить службу DiagTrack и разрешить соединение для исходящего трафик клиента единой телеметрии
@@ -148,7 +148,7 @@ DiagnosticDataLevel -Minimal
 
 # Turn off the Windows Error Reporting
 # Отключить запись отчетов об ошибках Windows
-ErrorReporting -Disable
+#ErrorReporting -Disable
 
 # Turn on the Windows Error Reporting (default value)
 # Включить отчеты об ошибках Windows (значение по умолчанию)
@@ -164,7 +164,7 @@ WindowsFeedback -Disable
 
 # Turn off the diagnostics tracking scheduled tasks
 # Отключить задачи диагностического отслеживания
-ScheduledTasks -Disable
+#ScheduledTasks -Disable
 
 # Turn on the diagnostics tracking scheduled tasks (default value)
 # Включить задачи диагностического отслеживания (значение по умолчанию)
@@ -172,7 +172,7 @@ ScheduledTasks -Disable
 
 # Do not use sign-in info to automatically finish setting up device and reopen apps after an update or restart
 # Не использовать данные для входа для автоматического завершения настройки устройства и открытия приложений после перезапуска или обновления
-SigninInfo -Disable
+#SigninInfo -Disable
 
 # Use sign-in info to automatically finish setting up device and reopen apps after an update or restart (default value)
 # Использовать данные для входа для автоматического завершения настройки устройства и открытия приложений после перезапуска или обновления (значение по умолчанию)
@@ -342,11 +342,11 @@ PeopleTaskbar -Hide
 
 # Show seconds on the taskbar clock
 # Отображать секунды в системных часах на панели задач
-SecondsInSystemClock -Show
+#SecondsInSystemClock -Show
 
 # Hide seconds on the taskbar clock (default value)
 # Скрывать секунды в системных часах на панели задач (значение по умолчанию)
-# SecondsInSystemClock -Hide
+SecondsInSystemClock -Hide
 
 # When I snap a window, do not show what I can snap next to it
 # При прикреплении окна не показывать, что можно прикрепить рядом с ним
@@ -584,7 +584,7 @@ StorageSenseRecycleBin -Enable
 
 # Disable hibernation
 # Отключить режим гибернации
-Hibernate -Disable
+#Hibernate -Disable
 
 # Enable hibernate (default value)
 # Включить режим гибернации (значение по умолчанию)
@@ -616,19 +616,19 @@ BSoDStopError -Enable
 
 # Choose when to be notified about changes to your computer: never notify
 # Настройка уведомления об изменении параметров компьютера: никогда не уведомлять
-AdminApprovalMode -Disable
+#AdminApprovalMode -Disable
 
 # Choose when to be notified about changes to your computer: notify me only when apps try to make changes to my computer (default value)
 # Настройка уведомления об изменении параметров компьютера: уведомлять меня только при попытках приложений внести изменения в компьютер (значение по умолчанию)
-# AdminApprovalMode -Enable
+AdminApprovalMode -Enable
 
 # Turn on access to mapped drives from app running with elevated permissions with Admin Approval Mode enabled
 # Включить доступ к сетевым дискам при включенном режиме одобрения администратором при доступе из программ, запущенных с повышенными правами
-MappedDrivesAppElevatedAccess -Enable
+#MappedDrivesAppElevatedAccess -Enable
 
 # Turn off access to mapped drives from app running with elevated permissions with Admin Approval Mode enabled (default value)
 # Выключить доступ к сетевым дискам при включенном режиме одобрения администратором при доступе из программ, запущенных с повышенными правами (значение по умолчанию)
-# MappedDrivesAppElevatedAccess -Disable
+MappedDrivesAppElevatedAccess -Disable
 
 # Turn off Delivery Optimization
 # Выключить оптимизацию доставки
@@ -640,11 +640,11 @@ DeliveryOptimization -Disable
 
 # Always wait for the network at computer startup and logon for workgroup networks
 # Всегда ждать сеть при запуске и входе в систему для рабочих групп
-WaitNetworkStartup -Enable
+#WaitNetworkStartup -Enable
 
 # Never wait for the network at computer startup and logon for workgroup networks (default value)
 # Никогда не ждать сеть при запуске и входе в систему для рабочих групп (значение по умолчанию)
-# WaitNetworkStartup -Disable
+WaitNetworkStartup -Disable
 
 # Do not let Windows decide which printer should be the default one
 # Не разрешать Windows решать, какой принтер должен использоваться по умолчанию
@@ -690,7 +690,7 @@ UpdateMicrosoftProducts -Enable
 
 # Set the power management scheme on "High performance" if device is a desktop
 # Установить схему управления питанием на "Высокая производительность", если устройство является стационарным ПК
-PowerManagementScheme -High
+#PowerManagementScheme -High
 
 # Set the power management scheme on "Balanced" (default value)
 # Установить схему управления питанием на "Сбалансированная" (значение по умолчанию)
@@ -714,7 +714,7 @@ PCTurnOffDevice -Disable
 
 # Override for default input method: English
 # Переопределить метод ввода по умолчанию: английский
-SetInputMethod -English
+#SetInputMethod -English
 
 # Override for default input method: use language list (default value)
 # Переопределить метод ввода по умолчанию: использовать список языков (значение по умолчанию)
@@ -729,7 +729,7 @@ SetInputMethod -English
 	Пользовательские файлы и папки не будут перемещены в новое расположение. Переместите их вручную
 	По умолчанию они располагаются в папке %SystemDrive%\Users\%Username%
 #>
-SetUserShellFolderLocation -Root
+#SetUserShellFolderLocation -Root
 
 <#
 	Select folders for user folders location manually using a folder browser dialog
@@ -781,7 +781,7 @@ RecommendedTroubleshooting -Automatic
 
 # Launch folder windows in a separate process
 # Запускать окна с папками в отдельном процессе
-FoldersLaunchSeparateProcess -Enable
+#FoldersLaunchSeparateProcess -Enable
 
 # Do not launch folder windows in a separate process (default value)
 # Не запускать окна с папками в отдельном процессе (значение по умолчанию)
@@ -789,7 +789,7 @@ FoldersLaunchSeparateProcess -Enable
 
 # Disable and delete reserved storage after the next update installation
 # Отключить и удалить зарезервированное хранилище после следующей установки обновлений
-ReservedStorage -Disable
+#ReservedStorage -Disable
 
 # Enable reserved storage (default value)
 # Включить зарезервированное хранилище (значение по умолчанию)
@@ -805,7 +805,7 @@ F1HelpPage -Disable
 
 # Enable Num Lock at startup
 # Включить Num Lock при загрузке
-NumLock -Enable
+#NumLock -Enable
 
 # Disable Num Lock at startup (default value)
 # Выключить Num Lock при загрузке (значение по умолчанию)
@@ -927,7 +927,7 @@ AppSuggestions -Hide
 
 # Run the Windows PowerShell shortcut from the Start menu as Administrator
 # Запускать ярлык Windows PowerShell в меню "Пуск" от имени Администратора
-RunPowerShellShortcut -Elevated
+#RunPowerShellShortcut -Elevated
 
 # Run the Windows PowerShell shortcut from the Start menu as user (default value)
 # Запускать ярлык Windows PowerShell в меню "Пуск" от имени пользователя (значение по умолчанию)
@@ -940,13 +940,13 @@ RunPowerShellShortcut -Elevated
 	Закрепить на начальном экране следующие ярлыки: Панель управдения, Устройства и принтеры, PowerShell
 	Валидные значения ярлыков: ControlPanel, DevicesPrinters, PowerShell
 #>
-PinToStart -Tiles ControlPanel, DevicesPrinters, PowerShell
+#PinToStart -Tiles ControlPanel, DevicesPrinters, PowerShell
 
 <#
 	Unpin all tiles first and pin necessary ones
 	Открепить все ярлыки сначала и закрепить необходимые
 #>
-# PinToStart -UnpinAll -Tiles ControlPanel, DevicesPrinters, PowerShell
+PinToStart -UnpinAll -Tiles ControlPanel, DevicesPrinters, PowerShell
 
 # Unpin all the Start tiles
 # Открепить все ярлыки от начального экрана
@@ -961,7 +961,7 @@ PinToStart -Tiles ControlPanel, DevicesPrinters, PowerShell
 	Удалить UWP-приложения, используя всплывающее диалоговое окно
 	Пакеты приложений не будут установлены для новых пользователей, если отмечена галочка "Для всех пользователей"
 #>
-UninstallUWPApps
+# UninstallUWPApps
 
 <#
 	Uninstall UWP apps using the pop-up dialog box
@@ -972,7 +972,7 @@ UninstallUWPApps
 	Пакеты приложений не будут установлены для новых пользователей, если отмечена галочка "Для всех пользователей"
 	Галочка "Для всех пользователей" отмечена по умолчанию
 #>
-# UninstallUWPApps -ForAllUsers
+UninstallUWPApps -ForAllUsers
 
 <#
 	Restore the default UWP apps using the pop-up dialog box
@@ -994,7 +994,7 @@ UninstallUWPApps
 
 # Download and install "HEVC Video Extensions from Device Manufacturer" to be able to open .heic and .heif formats
 # Скачать и установить "Расширения для видео HEVC от производителя устройства", чтобы иметь возможность открывать форматы .heic и .heif
-HEIF -Install
+#HEIF -Install
 
 # Disable Cortana autostarting
 # Выключить автозагрузку Кортана
@@ -1020,7 +1020,7 @@ CheckUWPAppsUpdates
 #region Gaming
 # Disable Xbox Game Bar
 # Отключить Xbox Game Bar
-XboxGameBar -Disable
+#XboxGameBar -Disable
 
 # Enable Xbox Game Bar (default value)
 # Включить Xbox Game Bar (значение по умолчанию)
@@ -1158,7 +1158,7 @@ PUAppsDetection -Enable
 	Включить песочницу для Microsoft Defender
 	В KVM с QEMU присутствует баг: включение этой функции приводит ВМ к зависанию во время загрузки Windows
 #>
-DefenderSandbox -Enable
+#DefenderSandbox -Enable
 
 # Disable sandboxing for Microsoft Defender (default value)
 # Выключить песочницу для Microsoft Defender (значение по умолчанию)
@@ -1208,7 +1208,7 @@ EventViewerCustomView -Enable
 
 # Enable logging for all Windows PowerShell modules
 # Включить ведение журнала для всех модулей Windows PowerShell
-PowerShellModulesLogging -Enable
+#PowerShellModulesLogging -Enable
 
 # Disable logging for all Windows PowerShell modules (default value)
 # Выключить ведение журнала для всех модулей Windows PowerShell (значение по умолчанию)
@@ -1216,7 +1216,7 @@ PowerShellModulesLogging -Enable
 
 # Enable logging for all PowerShell scripts input to the Windows PowerShell event log
 # Включить ведение журнала для всех вводимых сценариев PowerShell в журнале событий Windows PowerShell
-PowerShellScriptsLogging -Enable
+#PowerShellScriptsLogging -Enable
 
 # Disable logging for all PowerShell scripts input to the Windows PowerShell event log (default value)
 # Выключить ведение журнала для всех вводимых сценариев PowerShell в журнале событий Windows PowerShell (значение по умолчанию)
@@ -1224,7 +1224,7 @@ PowerShellScriptsLogging -Enable
 
 # Disable apps and files checking within Microsofot Defender SmartScreen
 # Выключить проверку приложений и файлов фильтром SmartScreen в Microsoft Defender
-AppsSmartScreen -Disable
+#AppsSmartScreen -Disable
 
 # Enable apps and files checking within Microsofot Defender SmartScree (default value)
 # Включить проверку приложений и файлов фильтром SmartScreen в Microsoft Defender (значение по умолчанию)
